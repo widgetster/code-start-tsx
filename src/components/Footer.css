@@ -1,0 +1,129 @@
+/* THIRD BLOCK */
+.third-row .subscribe-button:hover {
+  background-color: rgba(0, 148, 0, 0.8);
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.third-block-bg{
+    background-color: rgb(22, 35, 52);
+    padding-top: 1.5px;
+}
+
+.first-row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.first-column{
+    width: 280px;
+}
+
+.first-row .first-column{
+    min-width: 280px;
+}
+
+.first-row .second-column{
+    min-width: 89.73px;
+}
+
+.first-row .third-column{
+    min-width: 98.66px;
+}
+
+.first-row .fourth-column{
+    min-width: 357.86px;
+}
+
+.first-column .code-p{
+    color: rgb(0, 148, 0);
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+}
+
+.first-column .empowering-p,
+.first-row .second-column .grey-p,
+.first-row .third-column .grey-p,
+.first-row .fourth-column .grey-p  {
+    color: rgb(206, 206, 206);
+}
+
+.first-row .second-column .grey-p:hover,
+.first-row .third-column .grey-p:hover{
+    cursor: pointer;
+    transition: 0.25s;
+    color: rgb(0, 148, 0);;
+}
+
+.first-row .fourth-column .grey-p{
+    width: 290px;
+}
+
+.first-row .second-column .white-p,
+.first-row .third-column .white-p,
+.first-row .fourth-column .white-p{
+    color: white;
+    font-weight: 600;
+} 
+
+.third-row .enter-email,
+.third-row .subscribe-button {
+    box-sizing: border-box;
+    height: 48px;
+}
+
+.third-row .enter-email {
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 6px;
+    background-color: rgb(22, 35, 52);
+    padding: 0 15px;
+    width: 210px;
+    color: white;
+    font-size: 16px;
+}
+
+.third-row .enter-email::placeholder{
+    font-size: 16px;
+    color: rgb(206, 206, 206);
+}
+
+.third-row .subscribe-button {
+    border: none;
+    border-radius: 6px;
+    padding: 0 33px;
+    background-color: rgb(0, 148, 0);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.second-row .rectangle{
+    width: 1300px;
+    height: 0.1px;
+    background-color: rgb(206, 206, 206);
+    margin: 0px auto;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.footer .copyright{
+    color: rgb(206, 206, 206);
+    font-size: 11px;
+    margin: 0 auto; 
+}
+
+.socmed-icons{
+    display: flex;
+    margin: 0 auto;
+}
+
+.second-row .socmed-icons img{
+    height: 20px;
+    margin: 0 12px;
+}
