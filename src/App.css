@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap');
+
+/* HEADER */
+.left{
+    display: flex;
+    align-items: center;
+    margin-left: 90px;
+    
+}
+
+.left p{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Poppins, sans-serif;
+    
+}
+
+.logo-img{
+    height: 60px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .left:hover{
+    cursor: pointer;
+}
+
+.middle{
+    display: flex;
+    column-gap: 35px;
+}
+
+.middle p:hover {
+    color: rgb(0, 148, 0);
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.sign-up-div{
+    margin-right: 90px;
+}
+
+.sign-up-div button{
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background-color: rgb(0, 148, 0);
+    color: white;
+    font-size: 15px;
+    transition: 0.25s;
+
+    min-width: 85.38px;
+}
+
+.sign-up-div button:hover{
+    background-color: rgba(0, 148, 0, 0.1);
+    transition: 0.25s;
+    color: rgb(0, 148, 0);
+    cursor: pointer;
+}
