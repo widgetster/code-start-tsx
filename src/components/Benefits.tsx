@@ -1,3 +1,6 @@
+import './Benefits.css'
+
+
 export function Benefits() {
   return (
     <div className="second-block-bg">
