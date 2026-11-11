@@ -3,7 +3,7 @@ import './App.css'
 function App() {
 
   return (
-    <h1>Aurora</h1>
+    <h1>CodeStart</h1>
   )
 }
 
