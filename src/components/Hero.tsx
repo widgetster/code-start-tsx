@@ -24,7 +24,7 @@ export function Hero() {
         </div>
       </div>
 
-      <img src="/icon/person.png" alt="CodeStart learner" />
+      <img src={`${import.meta.env.BASE_URL}icon/person.png`} alt="CodeStart learner" />
     </div>
   )
 }

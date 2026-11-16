@@ -12,7 +12,7 @@ export function Benefits() {
             <div className="icon-container">
               <img
                 className="icon-img"
-                src="/icon/book.png"
+                src={`${import.meta.env.BASE_URL}icon/book.png`}
                 alt="Book" />
             </div>
 
@@ -26,7 +26,7 @@ export function Benefits() {
             <div className="icon-container">
               <img
                 className="icon-img"
-                src="/icon/monitor.png"
+                src={`${import.meta.env.BASE_URL}icon/monitor.png`}
                 alt="Monitor" />
             </div>
 
@@ -40,7 +40,7 @@ export function Benefits() {
             <div className="icon-container">
               <img
                 className="icon-img"
-                src="/icon/rocket.png"
+                src={`${import.meta.env.BASE_URL}icon/rocket.png`}
                 alt="Rocket" />
             </div>
 

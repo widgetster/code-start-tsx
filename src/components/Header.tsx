@@ -8,7 +8,7 @@ export function Header() {
         <div className="left">
           <img
             className="logo-img"
-            src="/icon/logo.png"
+            src={`${import.meta.env.BASE_URL}icon/logo.png`}
             alt="CodeStart logo"
           />
 
