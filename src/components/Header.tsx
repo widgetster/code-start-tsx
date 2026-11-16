@@ -4,7 +4,7 @@ import './Header.css'
 export function Header() {
   return (
     <header>
-      <div className="header">
+      <div className="header container">
         <div className="left">
           <img
             className="logo-img"

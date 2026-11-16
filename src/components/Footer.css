@@ -11,28 +11,18 @@
 }
 
 .first-row{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: minmax(0, 280px) auto auto minmax(0, 358px);
+    justify-content: space-between;
+    column-gap: 48px;
 }
 
-.first-column{
-    width: 280px;
+.first-row > div {
+    min-width: 0;
 }
 
-.first-row .first-column{
-    min-width: 280px;
-}
-
-.first-row .second-column{
-    min-width: 89.73px;
-}
-
-.first-row .third-column{
-    min-width: 98.66px;
-}
-
-.first-row .fourth-column{
-    min-width: 357.86px;
+.first-column {
+    max-width: 280px;
 }
 
 .first-column .code-p{
@@ -52,11 +42,11 @@
 .first-row .third-column .grey-p:hover{
     cursor: pointer;
     transition: 0.25s;
-    color: rgb(0, 148, 0);;
+    color: rgb(0, 148, 0);
 }
 
 .first-row .fourth-column .grey-p{
-    width: 290px;
+    max-width: 290px;
 }
 
 .first-row .second-column .white-p,
@@ -64,7 +54,11 @@
 .first-row .fourth-column .white-p{
     color: white;
     font-weight: 600;
-} 
+}
+
+.third-row {
+    display: flex;
+}
 
 .third-row .enter-email,
 .third-row .subscribe-button {
@@ -77,7 +71,9 @@
     border-radius: 6px;
     background-color: rgb(22, 35, 52);
     padding: 0 15px;
-    width: 210px;
+    width: 100%;
+    min-width: 0;
+    flex: 1;
     color: white;
     font-size: 16px;
 }
@@ -88,6 +84,7 @@
 }
 
 .third-row .subscribe-button {
+    flex-shrink: 0;
     border: none;
     border-radius: 6px;
     padding: 0 33px;
@@ -99,8 +96,9 @@
 }
 
 .second-row .rectangle{
-    width: 1300px;
-    height: 0.1px;
+    width: 100%;
+    max-width: 1300px;
+    height: 1px;
     background-color: rgb(206, 206, 206);
     margin: 0px auto;
 }
@@ -109,6 +107,7 @@
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
+    gap: 16px;
     padding: 10px 0;
 }
 
@@ -126,4 +125,44 @@
 .second-row .socmed-icons img{
     height: 20px;
     margin: 0 12px;
+}
+
+@media (max-width: 1100px) {
+    .first-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px 32px;
+    }
+
+    .fourth-column {
+        max-width: 358px;
+    }
+}
+
+@media (max-width: 600px) {
+    .first-row {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 8px;
+        padding-block: 12px 24px;
+    }
+
+    .footer {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+        padding-block: 20px;
+    }
+
+    .footer > div:first-child {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .third-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .third-row .enter-email {
+        flex: auto;
+    }
 }

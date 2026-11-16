@@ -4,7 +4,7 @@ import './Footer.css'
 export function Footer() {
   return (
     <div className="third-block-bg">
-      <div className="first-row">
+      <div className="first-row container">
         <div className="first-column">
           <p className="code-p">CodeStart</p>
           <p className="empowering-p">Empowering beginners to build the web of tomorrow.</p>
@@ -39,7 +39,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="second-row">
+      <div className="second-row container">
         <div className="rectangle"></div>
 
         <footer className="footer">

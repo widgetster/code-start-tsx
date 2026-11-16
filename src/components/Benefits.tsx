@@ -4,7 +4,7 @@ import './Benefits.css'
 export function Benefits() {
   return (
     <div className="second-block-bg">
-      <div className="second-block">
+      <div className="second-block container">
         <p className="why-p">Why Choose CodeStart?</p>
 
         <div className="reason-block">
