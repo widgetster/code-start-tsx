@@ -1,0 +1,149 @@
+.about-intro {
+    background-color: rgba(0, 148, 0, 0.1);
+    padding-block: 50px;
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.about-intro-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: 60px;
+}
+
+.about-intro-copy {
+    max-width: 560px;
+}
+
+.about-eyebrow {
+    margin: 0 0 10px;
+    color: rgb(0, 148, 0);
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.about-intro h1,
+.about-mission h2,
+.about-value h3 {
+    font-family: Poppins, sans-serif;
+}
+
+.about-intro h1 {
+    margin: 0 0 16px;
+    font-size: clamp(32px, 3.34vw, 48px);
+    line-height: 1.5;
+}
+
+.about-description {
+    margin: 0 0 24px;
+    color: rgb(107, 107, 107);
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.about-home-link {
+    display: inline-block;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(0, 148, 0);
+    color: white;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.about-home-link:hover {
+    background-color: rgba(0, 148, 0, 0.8);
+}
+
+.about-home-link:focus-visible {
+    outline: 2px solid rgb(0, 148, 0);
+    outline-offset: 5px;
+}
+
+.about-image {
+    display: block;
+    width: 100%;
+    max-width: 501px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-mission {
+    padding-block: 40px;
+    text-align: center;
+}
+
+.about-mission h2 {
+    margin: 0 0 12px;
+    font-size: 23px;
+}
+
+.about-mission-description {
+    max-width: 680px;
+    margin: 0 auto 28px;
+    color: rgb(107, 107, 107);
+    line-height: 1.7;
+}
+
+.about-values {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 400px));
+    justify-content: space-around;
+    gap: 24px;
+}
+
+.about-value {
+    padding: 24px;
+    border-radius: 6px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.about-value img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 16px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.about-value h3 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.about-value p {
+    margin: 0;
+    color: rgb(107, 107, 107);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .about-values {
+        grid-template-columns: minmax(0, 600px);
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .about-intro {
+        padding-block: 36px;
+    }
+
+    .about-intro-content {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 32px;
+    }
+
+    .about-intro-copy,
+    .about-image {
+        justify-self: center;
+    }
+}

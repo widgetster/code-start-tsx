@@ -3,6 +3,9 @@
     display: flex;
     align-items: center;
     min-width: 0;
+    color: inherit;
+    text-decoration: none;
+    justify-self: start;
 }
 
 .left p{
@@ -31,14 +34,29 @@
 
 .middle{
     display: flex;
+    align-items: center;
     column-gap: clamp(16px, 1.85vw, 35px);
     justify-content: center;
 }
 
+.middle a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.25s;
+}
+
+.middle a:hover,
+.middle a[aria-current="page"],
 .middle p:hover {
     color: rgb(0, 148, 0);
     cursor: pointer;
     transition: 0.25s;
+}
+
+.header a:focus-visible {
+    outline: 2px solid rgb(0, 148, 0);
+    outline-offset: 5px;
+    border-radius: 3px;
 }
 
 .sign-up-div{
@@ -78,7 +96,8 @@
         column-gap: 20px;
     }
 
-    .middle p {
+    .middle p,
+    .middle a {
         margin-block: 10px;
     }
 
