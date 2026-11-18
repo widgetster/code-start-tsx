@@ -1,9 +1,9 @@
 import { useEffect } from 'react'
 import { Navigate, Route, Routes, useLocation } from 'react-router'
 import { Header } from './components/Header'
-import { Hero } from './components/Hero'
-import { Benefits } from './components/Benefits'
-import { About } from './components/About'
+import { Hero } from './Hero'
+import { Benefits } from './Benefits'
+import { About } from './About'
 import { Footer } from './components/Footer'
 
 
