@@ -20,12 +20,22 @@ export function Header() {
           <NavLink to="/" end>
             Home
           </NavLink>
+
           <NavLink to="/about">
             About
           </NavLink>
-          <p>Courses</p>
-          <p>Blog</p>
-          <p>Contact</p>
+
+          <NavLink to="/courses">
+            Courses
+          </NavLink>
+          
+          <NavLink to="/blog">
+            Blog
+          </NavLink>
+          
+          <NavLink to="/contact">
+            Contact
+          </NavLink>
         </nav>
 
         <div className="sign-up-div">
