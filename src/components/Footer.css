@@ -38,11 +38,23 @@
     color: rgb(206, 206, 206);
 }
 
+.first-row .second-column a.grey-p {
+    display: block;
+    width: fit-content;
+    margin-block: 16px;
+    text-decoration: none;
+}
+
+.first-row .second-column .grey-p:focus-visible {
+    outline: 2px solid rgb(0, 148, 0);
+    outline-offset: 4px;
+}
+
 .first-row .second-column .grey-p:hover,
 .first-row .third-column .grey-p:hover{
     cursor: pointer;
     transition: 0.25s;
-    color: rgb(0, 148, 0);
+    color: rgb(0, 148, 0);    
 }
 
 .first-row .fourth-column .grey-p{

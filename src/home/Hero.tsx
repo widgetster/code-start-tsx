@@ -1,7 +1,18 @@
 import './Hero.css'
+import { useNavigate } from 'react-router'
 
 
 export function Hero() {
+  const navigate = useNavigate();
+
+  function navCourses() {
+    navigate('/courses');
+  }
+
+  function navAbout() {
+    navigate('/about');
+  }
+
   return (
     <div className="first-block-bg">
       <div className="hero-content container">
@@ -20,8 +31,8 @@ export function Hero() {
           </p>
 
           <div className="first-block-buttons">
-            <button className="browse-button">Browse Courses</button>
-            <button className="learn-button">Learn More</button>
+            <button className="browse-button" onClick={navCourses}>Browse Courses</button>
+            <button className="learn-button" onClick={navAbout}>Learn More</button>
           </div>
         </div>
 

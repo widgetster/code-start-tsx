@@ -2,6 +2,7 @@ import './Footer.css'
 
 
 export function Footer() {
+
   return (
     <div className="third-block-bg">
       <div className="first-row container">
@@ -11,7 +12,7 @@ export function Footer() {
         </div>
 
         <div className="second-column">
-          <p className="white-p">Quick Links</p>
+          <p className="white-p">Quick Links</p>         
           <p className="grey-p">Home</p>
           <p className="grey-p">About</p>
           <p className="grey-p">Courses</p>
