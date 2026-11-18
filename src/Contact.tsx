@@ -87,7 +87,7 @@ export function Contact() {
           />
 
           <p className="contact-hint">
-            This practice page does not send or save messages yet.
+            
           </p>
         </div>
       </section>
