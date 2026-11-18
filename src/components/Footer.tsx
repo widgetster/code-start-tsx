@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import './Footer.css'
 
 
@@ -13,11 +14,25 @@ export function Footer() {
 
         <div className="second-column">
           <p className="white-p">Quick Links</p>         
-          <p className="grey-p">Home</p>
-          <p className="grey-p">About</p>
-          <p className="grey-p">Courses</p>
-          <p className="grey-p">Blog</p>
-          <p className="grey-p">Contact</p>
+          <Link className="grey-p" to="/">
+            Home
+          </Link>
+
+          <Link className="grey-p" to="/about">
+            About
+          </Link>
+
+          <Link className="grey-p" to="/courses">
+            Courses
+          </Link>
+
+          <Link className="grey-p" to="/blog">
+            Blog
+          </Link>
+
+          <Link className="grey-p" to="/contact">
+            Contact
+          </Link>
         </div>
 
         <div className="third-column">
