@@ -3,7 +3,12 @@ import './About.css'
 
 
 export function About() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+
+  function navHome() {
+    navigate('/');
+  }
+
 
   return (
     <>
@@ -21,7 +26,7 @@ export function About() {
             <button
               type="button"
               className="about-home-link"
-              onClick={() => navigate('/')}
+              onClick={navHome}
             >
               Back to Home
             </button>
