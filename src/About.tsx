@@ -29,7 +29,7 @@ export function About() {
 
           <img
             className="about-image"
-            src={`${import.meta.env.BASE_URL}icon/computer1.png`}
+            src="icon/computer1.png"
             alt="Learner practicing web development on a laptop"
           />
         </div>
@@ -46,19 +46,19 @@ export function About() {
 
         <div className="about-values">
           <article className="about-value">
-            <img src={`${import.meta.env.BASE_URL}icon/book.png`} alt="" />
+            <img src="icon/book.png" alt="" />
             <h3>Start with the Basics</h3>
             <p>Get comfortable with HTML and CSS through clear, beginner-friendly lessons.</p>
           </article>
 
           <article className="about-value">
-            <img src={`${import.meta.env.BASE_URL}icon/monitor.png`} alt="" />
+            <img src="icon/monitor.png" alt="" />
             <h3>Learn by Building</h3>
             <p>Turn each new skill into something you can see with hands-on mini projects.</p>
           </article>
 
           <article className="about-value">
-            <img src={`${import.meta.env.BASE_URL}icon/rocket.png`} alt="" />
+            <img src="icon/rocket.png" alt="" />
             <h3>Keep Moving Forward</h3>
             <p>Learn at your own pace and grow your confidence with every small win.</p>
           </article>

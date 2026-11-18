@@ -48,9 +48,9 @@ export function Footer() {
           <p className="copyright">&copy; 2024 CodeStart. All rights reserved.</p>
 
           <div className="socmed-icons">
-            <img src={`${import.meta.env.BASE_URL}icon/facebook.png`} alt="Facebook" />
-            <img src={`${import.meta.env.BASE_URL}icon/twitter.png`} alt="Twitter" />
-            <img src={`${import.meta.env.BASE_URL}icon/instagram.png`} alt="Instagram" />
+            <img src="icon/facebook.png" alt="Facebook" />
+            <img src="icon/twitter.png" alt="Twitter" />
+            <img src="icon/instagram.png" alt="Instagram" />
           </div>
 
 

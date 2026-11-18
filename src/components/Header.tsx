@@ -9,7 +9,7 @@ export function Header() {
         <Link className="left" to="/" aria-label="CodeStart home">
           <img
             className="logo-img"
-            src={`${import.meta.env.BASE_URL}icon/logo.png`}
+            src="icon/logo.png"
             alt="CodeStart logo"
           />
 

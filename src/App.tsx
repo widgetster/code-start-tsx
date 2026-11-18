@@ -1,8 +1,7 @@
 import { useEffect } from 'react'
 import { Navigate, Route, Routes, useLocation } from 'react-router'
 import { Header } from './components/Header'
-import { Hero } from './Hero'
-import { Benefits } from './Benefits'
+import { Home } from './Home'
 import { About } from './About'
 import { Courses } from './Courses'
 import { Blog } from './Blog'
@@ -23,16 +22,7 @@ function App() {
 
       <main>
         <Routes>
-          <Route
-            index
-            element={
-              <>
-                <title>Home</title>
-                <Hero />
-                <Benefits />
-              </>
-            }
-          />
+          <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/blog" element={<Blog />} />  
