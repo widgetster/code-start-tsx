@@ -1,8 +1,10 @@
 /* FIRST BLOCK */
 .first-block-bg{
+    display: grid;
+    align-items: center;
+    flex-grow: 3;
     background-color: rgba(0, 148, 0, 0.1);
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-block: var(--section-space);
     box-shadow: inset 1px 2px 5px rgba(0,0,0,0.05);
 }
 
@@ -10,96 +12,93 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: center;
-    gap: 60px;
+    gap: clamp(2rem, 4vw, 7rem);
 }
 
 .first-block{
-    width: 100%;
-    max-width: 500px;
-    min-width: 0;
+    max-inline-size: 56rem;
 }
 
 .first-block-bg img{
     display: block;
-    width: 100%;
-    max-width: 501px;
+    width: min(100%, 55rem);
     height: auto;
-    border-radius: 10px;
+    justify-self: center;
 }
 
 .build-p{
-    font-size: 11px;
+    font-size: clamp(0.6875rem, 0.58rem + 0.24vw, 1.125rem);
     font-weight: 600;
-    margin-top: 0;
+    margin: 0 0 0.75rem;
     color: rgb(0, 148, 0);
 }
 
 .start-p{
     font-family: Poppins, sans-serif;
-    font-size: clamp(32px, 3.34vw, 48px);
+    font-size: clamp(2rem, 1.1rem + 2.1vw, 5.5rem);
     font-weight: 700;
-    line-height: 1.5;
-    margin-top:    10px;
-    margin-bottom: 10px;
+    line-height: 1.15;
+    text-wrap: balance;
+    margin: 0;
 }
 
 .learn-p{
-    font-size: 19px;
+    max-inline-size: 48ch;
+    font-size: clamp(1rem, 0.82rem + 0.42vw, 1.625rem);
+    line-height: 1.6;
+    margin-block: clamp(1rem, 1.4vw, 2rem);
     color: rgb(107, 107, 107);
 }
 
 .first-block-buttons{
     display: flex;
     flex-wrap: wrap;
-    gap: 12px 19px;
+    gap: clamp(0.625rem, 1.25vw, 1.5rem);
+}
+
+.first-block-buttons button{
+    min-block-size: 2.75rem;
+    padding: clamp(0.75rem, 1.1vw, 1.25rem) clamp(0.75rem, 1.5vw, 1.75rem);
+    border-radius: 6px;
+    font-size: clamp(1rem, 0.88rem + 0.18vw, 1.25rem);
+    font-weight: 600;
+    transition: background-color 0.25s;
+    cursor: pointer;
 }
 
 .browse-button{
     border: none;
-    padding: 16px 20px;
-    border-radius: 6px;
     background-color: rgb(0, 148, 0);
     color: white;
-    font-size: 16px;
-    font-weight: 600;
-    transition: 0.25s;
 }
 
-.first-block-buttons .browse-button:hover {
-  background-color: rgba(0, 148, 0, 0.8);
-  transition: 0.25s;
-  cursor: pointer;
+.browse-button:hover {
+    background-color: rgba(0, 148, 0, 0.8);
 }
 
 .learn-button{
     border: 1px solid rgb(0, 148, 0);
-    padding: 16px 20px;
-    border-radius: 6px;
     background-color: rgba(0, 148, 0, 0.1);
     color: rgb(0, 148, 0);
-    font-size: 16px;
-    font-weight: 600;
-    transition: 0.25s;
 }
 
-.first-block-buttons .learn-button:hover{
+.learn-button:hover{
     background-color: rgba(0, 148, 0, 0.2);
-    transition: 0.25s;
-    cursor: pointer;
 }
 
-@media (max-width: 800px) {
-    .first-block-bg {
-        padding-block: 36px;
-    }
-
+@media (max-width: 46rem) {
     .hero-content {
+        max-inline-size: 38rem;
         grid-template-columns: minmax(0, 1fr);
-        gap: 32px;
     }
 
-    .first-block,
     .first-block-bg img {
-        justify-self: center;
+        max-inline-size: 29rem;
+    }
+}
+
+@media (max-width: 20rem) {
+    .first-block-buttons button {
+        flex-grow: 1;
     }
 }

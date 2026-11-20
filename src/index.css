@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap');
 
+:root {
+  --content-gap: clamp(1rem, 2vw, 2.5rem);
+  --section-space: clamp(2.5rem, min(4vw, 5vh), 6rem);
+  --section-title-size: clamp(1.5rem, 1.12rem + 0.85vw, 3rem);
+  --page-title-size: clamp(2rem, 1.1rem + 1.85vw, 4.5rem);
+  --card-text-size: clamp(0.875rem, 0.75rem + 0.27vw, 1.125rem);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,9 +17,22 @@ body {
   font-family: Inter, sans-serif;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  min-block-size: 100vh;
+  min-block-size: 100svh;
+}
+
+#root > main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
 .container {
-  width: 100%;
-  max-width: 1920px;
+  inline-size: 100%;
+  max-inline-size: clamp(80rem, 75vw, 148rem);
   margin-inline: auto;
-  padding-inline: clamp(20px, 4.75vw, 90px);
+  padding-inline: clamp(1rem, 4vw, 4rem);
 }

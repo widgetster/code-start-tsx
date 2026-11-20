@@ -5,7 +5,7 @@ export function Benefits() {
   return (
     <div className="second-block-bg">
       <div className="second-block container">
-        <p className="why-p">Why Choose CodeStart?</p>
+        <h2 className="why-p">Why Choose CodeStart?</h2>
 
         <div className="reason-block">
           <div className="reason">

@@ -9,23 +9,23 @@
 }
 
 .left p{
-    font-size: 20px;
+    font-size: clamp(1.125rem, 0.95rem + 0.45vw, 1.75rem);
     font-weight: bold;
     font-family: Poppins, sans-serif;
     margin: 0;
 }
 
 .logo-img{
-    height: 60px;
+    width: clamp(2.75rem, 3.4vw, 5rem);
+    height: auto;
 }
 
 .header{
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    gap: 24px;
+    gap: var(--content-gap);
     align-items: center;
-    min-height: 72px;
-    padding-block: 6px;
+    padding-block: clamp(0.375rem, 0.6vw, 0.875rem);
 }
 
 .header .left:hover{
@@ -35,19 +35,20 @@
 .middle{
     display: flex;
     align-items: center;
-    column-gap: clamp(16px, 1.85vw, 35px);
+    column-gap: clamp(0.75rem, 2vw, 3rem);
     justify-content: center;
+    font-size: clamp(0.9375rem, 0.82rem + 0.25vw, 1.25rem);
 }
 
 .middle a {
     color: inherit;
+    padding-block: 0.5rem;
     text-decoration: none;
     transition: color 0.25s;
 }
 
 .middle a:hover,
-.middle a[aria-current="page"],
-.middle p:hover {
+.middle a[aria-current="page"] {
     color: rgb(0, 148, 0);
     cursor: pointer;
     transition: 0.25s;
@@ -65,14 +66,14 @@
 
 .sign-up-div button{
     border: none;
-    padding: 8px 16px;
+    padding: 0.625rem clamp(0.875rem, 1.1vw, 1.5rem);
     border-radius: 6px;
     background-color: rgb(0, 148, 0);
     color: white;
-    font-size: 15px;
+    font: inherit;
+    font-size: clamp(0.875rem, 0.8rem + 0.18vw, 1.125rem);
     transition: 0.25s;
-
-    min-width: 85.38px;
+    white-space: nowrap;
 }
 
 .sign-up-div button:hover{
@@ -82,7 +83,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 46rem) {
     .header {
         grid-template-columns: 1fr auto;
         column-gap: 16px;
@@ -93,12 +94,6 @@
         grid-column: 1 / -1;
         grid-row: 2;
         flex-wrap: wrap;
-        column-gap: 20px;
-    }
-
-    .middle p,
-    .middle a {
-        margin-block: 10px;
     }
 
     .sign-up-div {

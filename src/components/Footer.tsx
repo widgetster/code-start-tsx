@@ -5,7 +5,7 @@ import './Footer.css'
 export function Footer() {
 
   return (
-    <div className="third-block-bg">
+    <footer className="third-block-bg">
       <div className="first-row container">
         <div className="first-column">
           <p className="code-p">CodeStart</p>
@@ -48,19 +48,20 @@ export function Footer() {
           <p className="grey-p">Subscribe to get the latest tutorials and coding tips.</p>
 
           <div className="third-row">
-            <input type="text" className="enter-email" placeholder="Enter your email" />
+            <input
+              type="email"
+              className="enter-email"
+              placeholder="Enter your email"
+              aria-label="Email address"
+            />
 
             <button className="subscribe-button">Subscribe</button>
           </div>
         </div>
       </div>
 
-      <div className="second-row container">
-        <div className="rectangle"></div>
-
-        <footer className="footer">
-          <div></div>
-
+      <div className="container">
+        <div className="footer">
           <p className="copyright">&copy; 2024 CodeStart. All rights reserved.</p>
 
           <div className="socmed-icons">
@@ -68,12 +69,8 @@ export function Footer() {
             <img src="icon/twitter.png" alt="Twitter" />
             <img src="icon/instagram.png" alt="Instagram" />
           </div>
-
-
-        </footer>
-
-
+        </div>
       </div>
-    </div>
+    </footer>
   )
 }

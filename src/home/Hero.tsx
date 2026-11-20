@@ -21,9 +21,9 @@ export function Hero() {
             BUILD • LEARN • GROW
           </p>
 
-          <p className="start-p">
+          <h1 className="start-p">
             Start Your Coding Journey Today
-          </p>
+          </h1>
 
           <p className="learn-p">
             Learn HTML, CSS, and modern web skills step by step
@@ -36,7 +36,7 @@ export function Hero() {
           </div>
         </div>
 
-        <img src="icon/person.png" alt="CodeStart learner" />
+        <img src="icon/person.png" width="1085" height="650" alt="CodeStart learner" />
       </div>
     </div>
   )

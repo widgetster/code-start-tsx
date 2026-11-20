@@ -1,6 +1,9 @@
 .about-intro {
+    display: grid;
+    align-items: center;
+    flex-grow: 2;
     background-color: rgba(0, 148, 0, 0.1);
-    padding-block: 50px;
+    padding-block: var(--section-space);
     box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
 }
 
@@ -8,11 +11,11 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: center;
-    gap: 60px;
+    gap: clamp(2rem, 4vw, 7rem);
 }
 
 .about-intro-copy {
-    max-width: 560px;
+    max-inline-size: 46rem;
 }
 
 .about-eyebrow {
@@ -30,14 +33,15 @@
 
 .about-intro h1 {
     margin: 0 0 16px;
-    font-size: clamp(32px, 3.34vw, 48px);
-    line-height: 1.5;
+    font-size: var(--page-title-size);
+    line-height: 1.2;
+    text-wrap: balance;
 }
 
 .about-description {
     margin: 0 0 24px;
     color: rgb(107, 107, 107);
-    font-size: 19px;
+    font-size: clamp(1rem, 0.88rem + 0.3vw, 1.375rem);
     line-height: 1.6;
 }
 
@@ -67,19 +71,24 @@
 .about-image {
     display: block;
     width: 100%;
-    max-width: 501px;
+    max-inline-size: 36rem;
     height: auto;
     border-radius: 10px;
+    justify-self: center;
 }
 
 .about-mission {
-    padding-block: 40px;
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    padding-block: var(--section-space);
     text-align: center;
 }
 
 .about-mission h2 {
     margin: 0 0 12px;
-    font-size: 23px;
+    font-size: var(--section-title-size);
 }
 
 .about-mission-description {
@@ -91,13 +100,12 @@
 
 .about-values {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 400px));
-    justify-content: space-around;
-    gap: 24px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--content-gap);
 }
 
 .about-value {
-    padding: 24px;
+    padding: clamp(1rem, 2vw, 3rem);
     border-radius: 6px;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
 }
@@ -120,30 +128,22 @@
 .about-value p {
     margin: 0;
     color: rgb(107, 107, 107);
-    font-size: 14px;
+    font-size: var(--card-text-size);
     line-height: 1.6;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 46rem) {
+    .about-intro-content,
+    .about-mission {
+        max-inline-size: 38rem;
+    }
+
+    .about-intro-content,
     .about-values {
-        grid-template-columns: minmax(0, 600px);
-        justify-content: center;
-        gap: 20px;
-    }
-}
-
-@media (max-width: 800px) {
-    .about-intro {
-        padding-block: 36px;
-    }
-
-    .about-intro-content {
         grid-template-columns: minmax(0, 1fr);
-        gap: 32px;
     }
 
-    .about-intro-copy,
     .about-image {
-        justify-self: center;
+        max-inline-size: 29rem;
     }
 }
